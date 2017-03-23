@@ -4,7 +4,7 @@ python:
 # command to run tests
 script: make
 
-
+install: "pip install --upgrade termcolor"
 after_sucess:
   - CODECLIMATE_REPO_TOKEN=<token> codeclimate-test-reporter
 
