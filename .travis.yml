@@ -8,10 +8,10 @@ before_install:
 #  - pip install pytest pytest-cov
   - pip install --upgrade termcolor
   - pip install coveralls
-  
+
 script: 
   - coverage run test.py test
 
-after_sucess:
+after_success:
   - coveralls
 
