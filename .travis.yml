@@ -3,8 +3,10 @@ python:
   - "3.5"
 # command to run tests
 before-install:
-  - pip install coveralls
-install: "pip install --upgrade termcolor"
+
+install: 
+  -pip install --upgrade termcolor
+  -pip install coveralls
 script: make
 
 after_sucess:
