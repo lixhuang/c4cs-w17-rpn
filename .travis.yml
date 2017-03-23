@@ -5,10 +5,10 @@ python:
 #before-install:
 
 install: 
-  - pip3 install --upgrade termcolor
-  - pip3 install coveralls
+  - pip install --upgrade termcolor
+  - pip install coveralls
 script: 
-  - coverage run test_rpn.py test
+  - coverage run test.py test
 
 after_sucess:
   - coveralls
