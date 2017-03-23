@@ -3,8 +3,9 @@ python:
   - "3.5"
 # command to run tests
 script: make
-
+before-install:
+  - pip install coveralls
 install: "pip install --upgrade termcolor"
 after_sucess:
-  - CODECLIMATE_REPO_TOKEN=<token> codeclimate-test-reporter
+  - coveralls
 
