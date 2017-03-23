@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-
+from termcolor import colored
+import readline
 import operator
 
 OPERATIONS = {
@@ -28,7 +29,10 @@ def calculate(arg):
 def main():
     while True:
         rst = calculate(input("rpn calc> "))
-        print (rst)
+        if rst < 0:
+        	print(colored('rst','red'));
+        else:
+        	print(colored('rst','blue'));
 
 if __name__ == '__main__': # Note: that's "underscore underscore n a m e ..."
     main()

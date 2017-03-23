@@ -4,6 +4,7 @@ python:
 # command to run tests
 script: make
 
+
 after_sucess:
   - CODECLIMATE_REPO_TOKEN=<token> codeclimate-test-reporter
 
