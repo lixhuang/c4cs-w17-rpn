@@ -8,7 +8,7 @@ install:
   - pip3 install --upgrade termcolor
   - pip3 install coveralls
 script: 
-  - coveralls run test_rpn.py unittest
+  - coveralls run test_rpn.py test
 
 after_sucess:
   - coveralls
