@@ -10,7 +10,7 @@ before_install:
   - pip install coveralls
 
 script: 
-  - coverage run test.py test
+  - coverage run -m unittest
 
 after_success:
   - coveralls
