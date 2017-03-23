@@ -7,8 +7,9 @@ python:
 install: 
   - pip install --upgrade termcolor
   - pip install coveralls
-script: make
-
+script: 
+  - coveralls run unittest
+  
 after_sucess:
   - coveralls
 
