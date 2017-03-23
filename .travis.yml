@@ -4,9 +4,11 @@ python:
 # command to run tests
 #before-install:
 
-install: 
+before_install: 
+#  - pip install pytest pytest-cov
   - pip install --upgrade termcolor
   - pip install coveralls
+  
 script: 
   - coverage run test.py test
 
